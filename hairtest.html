@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HairTest Traya</title>
+    <link rel="stylesheet" href="./project.css">
+</head>
+<body>
+    <center>
+    <div class="container">
+         <a href="#">Hair Test</a>
+        <h2>Hair test Questions</h2>
+            <form id="hairtestform">
+                <div class="step" id="step1">
+                    <label for="">What's Your Age?</label><br>
+                    <input type="number" name="age" required />
+                    <button type="button" onclick="nextStep(2)">Next</button>
+                </div>  
+                <div class="step" id="step2" style="display: none;">
+                    <label for="">Are you Experiencing Hair fall?</label>
+                    <select name="hairfall" id="">
+                        <option value="Yes">Yes</option>
+                        <option value="No">NO</option>
+                    </select>
+                    <button type="button" onclick="nextStep(3)">Next</button>
+                </div> 
+                <div class="step" id="step3" style="display: none;">
+                    <label for="">How long it has been happening?</label><br/>
+                    <select name="duration" id="">
+                        <option value="less">Less than 6 months</option>
+                        <option value="more">More than 6 months</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        <p id="resultMsg"></p>    
+    </div>
+    <script>
+        function nextStep(step){
+            document.querySelectorAll(".step").forEach(div=>div.style.display="none");
+            document.getElementById("step" + step).style.display = "block";
+        }
+            document.getElementById("hairtestform").addEventListener("submit",function(e){
+                e.preventDefault();
+                document.getElementById("resultMsg").innerText= "Thanks for taking the test! we will get back with a personalized plan.";
+                this.style.display = "none";
+            });
+    </script>
+    </center>
+    
+  <div id="gemini-icon" onclick="openChat()">
+    <img  src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/gemini-color.png" />
+  </div>
+
+  <div class="chatbox hidden" id="chatbox">
+    <div class="chat-header">
+      <span><h2>Traya AI Assistant🤖</h2></span>
+      <button onclick="closeChat()">✖</button>
+    </div>
+    <div id="chat-log" class="chat-log">
+      <div class="bot-msg">Hello! I'm Traya's AI assistant. Ask me anything about hair health, treatments, or our products!</div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="user-input" placeholder="Ask about hair health..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

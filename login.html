@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Traya</title>
+    <link rel="stylesheet" href="./project.css">
+</head>
+<body>
+    <div class="login-container">
+        <a href="#">Login</a>
+        <h2>Login to Traya HealthCare</h2>
+        <form class="login-form">
+            <label for="email">Email:</label><br/>
+            <input type="email" id="email" name="email"  required /><br/><br/>  
+            <label for="password">Password:</label><br/>
+            <input type="password" id="password" name="password" required /><br/><br/>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+  <div id="gemini-icon" onclick="openChat()">
+    <img  src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/gemini-color.png" />
+  </div>
+
+  <div class="chatbox hidden" id="chatbox">
+    <div class="chat-header">
+      <span><h2>Traya AI Assistant🤖</h2></span>
+      <button onclick="closeChat()">✖</button>
+    </div>
+    <div id="chat-log" class="chat-log">
+      <div class="bot-msg">Hello! I'm Traya's AI assistant. Ask me anything about hair health, treatments, or our products!</div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="user-input" placeholder="Ask about hair health..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

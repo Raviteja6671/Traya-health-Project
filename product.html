@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product of Traya</title>
+    <link rel="stylesheet" href="./project.css">
+</head>
+<body>
+     <header>
+        <h1>Traya Products</h1>
+        <nav class="h">
+            <a href="#"></a>
+            <a href="./index.html">Home</a>
+            <a href="./hairtest.html">Hair Test</a>
+            <a href="./cart.html"><img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Cart" height="30px" width="30px" style="filter: brightness(0) invert(1); border-radius: 6px;" /></a>
+            
+        </nav>
+     </header>
+     <center><h1 style="font-size: xx-large;">The Essentials</h1></center>
+     <section>
+        <div class="c-wrapper">
+        <div class="see-all"></div>
+        <div class="c-container">
+        <button class="arrow left" onclick="scrollLeft()">&#10094;</button>
+        <div class="scroll-wrapper">
+        <div class="scroll-track">
+        <div class="product-card">  
+
+        <!-- 1 -->
+            <img src="https://m.media-amazon.com/images/I/51-jGkpT34L._AC_UF1000,1000_QL80_.jpg" alt="Scalp Oil" height="300px" width="300px" >
+            <h3>Consti Clear for Improved Bowel Movement</h3>
+            <p>A natural remedy that helps manage constipation and facilitates easy bowel movements in the Traya.</p>
+            <h4><p class="price">₹599</p></h4>
+            <button onclick="addToCart('Consti Clear', 599, 'https://m.media-amazon.com/images/I/51-jGkpT34L._AC_UF1000,1000_QL80_.jpg')" style="background-color: greenyellow; color: black;">Add to Cart</button>
+            <a href=""> <h3>view product</h3></a>
+        </div>
+         
+        <!-- 2 -->
+        <div class="product-card">
+            <img src="https://traya.health/cdn/shop/files/intro_decorated_69015ccd-2232-4a7e-9ee4-49157d291839.webp?v=1728624798" alt="" height="300px" width="300px">
+            <h3>Anti Dandruff Solution for the hair control</h3>
+            <p>Anti-fungal treatment that fights heavy dandruff and leaves the scalp itch-free in the Traya health care.</p>
+            <h4><p class="price">₹399</p></h4>
+           
+             <button onclick="addToCart('Anti Dandruff Solution', 399, 'https://traya.health/cdn/shop/files/intro_decorated_69015ccd-2232-4a7e-9ee4-49157d291839.webp')" style="background-color: greenyellow; color: black;">Add to Cart</button>
+
+            <a href=""> <h3>view product</h3></a>  
+        </div>
+
+         <!-- 3 -->
+        <div class="product-card">
+            <img src="https://traya.health/cdn/shop/files/intro_decorated_1fd17f8a-a00f-4924-ba22-e13e65c9778d.webp?v=1728627613" alt="" height="300px" width="300px">
+            <h3>Her Nourish and PCOS Santulan for Hair shine</h3>
+            <p>An Ayurvedic formulation that helps to relieve PCOS-related symptoms and very good for the hair shine.</p>
+            <h4><p class="price"></p>₹700</h4>
+             <button onclick="addToCart('PCOS Santulan', 700, 'https://traya.health/cdn/shop/files/intro_decorated_1fd17f8a-a00f-4924-ba22-e13e65c9778d.webp?v=1728627613')" style="background-color: greenyellow; color: black;">Add to cart</button>
+             <a href=""> <h3>view product</h3></a>
+        </div>
+
+        <!-- 4 -->
+        <div class="product-card">
+            <img src="https://traya.health/cdn/shop/files/intro_decorated_4bebb330-32c4-424f-bae0-a35b9de572bc.webp?v=1728627481" alt="" height="300px" width="300px">
+            <h3>Mom Santulan Tablets Good for baby’s delivery stage </h3>
+            <p>A restorative supplement that helps treat hair loss in women in the postpartum (post-childbirth) period.</p>
+            <h4><p class="price">₹820</p></h4>
+           <button onclick="addToCart('Mom Santulan Tablets', 820, 'https://traya.health/cdn/shop/files/intro_decorated_4bebb330-32c4-424f-bae0-a35b9de572bc.webp?v=1728627481')" style="background-color: greenyellow; color: black;">Add to cart</button>
+            <a href=""> <h3>view product</h3></a>
+        </div>
+
+        <!-- 5 -->
+        <div class="product-card">
+            <img src="https://traya.health/cdn/shop/files/intro_decorated_64d2d5eb-1062-41a5-a419-160d67d3f17d.webp?v=1728626379" alt="" height="300px" width="300px">
+            <h3>Hair Ras Ayurvedic Hair Herbs|100% Natural Hair with Bhringraj</h3>
+            <p>A herbal supplement with Shatavari and Bhringraj for better hair quality and delayed greying.</p>
+            <h4><p class="price">₹520</p></h4>
+           <button onclick="addToCart('Hair Ras Ayurvedic Hair Herbs', 520, 'https://traya.health/cdn/shop/files/intro_decorated_64d2d5eb-1062-41a5-a419-160d67d3f17d.webp?v=1728626379')" style="background-color: greenyellow; color: black;">Add to cart</button>
+           <a href=""> <h3>view product</h3></a>
+        </div>
+
+        <!-- 6 -->
+         <div class="product-card">
+            <img src="https://traya.health/cdn/shop/files/intro_decorated_7234f1ac-b09c-4452-b4bf-b460ae4c50c1.webp?v=1728625862" alt="" height="300px" width="300px">
+            <h3>Defence shampoo | Mild Shampoo with Biotin (100 ml)</h3>
+            <p>Sulphate-free hair and scalp cleansing shampoo with AnaGain (R) and Chemical (sulphate and paraben) free shampoo.</p>
+            <h4><p class="price">₹300</p></h4>
+            <button onclick="addToCart('Defence shampoo', 300, 'https://traya.health/cdn/shop/files/intro_decorated_7234f1ac-b09c-4452-b4bf-b460ae4c50c1.webp?v=1728625862')" style="background-color: greenyellow; color: black;">Add to cart</button>
+            <a href=""> <h3>view product</h3></a>
+        </div>
+
+        <!-- 7 -->
+        <div class="product-card">
+            <img src="https://traya.health/cdn/shop/files/intro_decorated_7a114ada-3781-42e9-b48b-7f1010da9e6f.webp?v=1735197124&width=823" alt="" height="300px" width="300px">
+            <h3>Gutt Shuddhi - Natural Supplement for Gut Health</h3>
+            <p>An Ayurvedic herbal remedy that enhances digestion, gut health | hair quality | Ayurvedic medicine for digestion.</p>
+            <h4><p class="price">₹200</p></h4>
+            <button onclick="addToCart('Gutt Shuddhi', 200, 'https://traya.health/cdn/shop/files/intro_decorated_7a114ada-3781-42e9-b48b-7f1010da9e6f.webp?v=1735197124&width=823')" style="background-color: greenyellow; color: black;">Add to cart</button>
+            <a href=""> <h3>view product</h3></a>
+        </div>
+
+        <!-- 8 -->
+         <div class="product-card">
+            <img src="https://traya.health/cdn/shop/files/intro_8817b297-07c7-4945-b3b6-9fc06781baeb.webp?v=1736228872&width=823" alt="" height="300px" width="300px">
+            <h3>Health Tatva for Energy | Absorption | Immunity | Fatigue</h3>
+            <p>Ayurvedic herbs to boost absorption of nutrients for improved energy and hair health | Targets root causes of thinning and weakening hair.</p>
+            <h4><p class="price"></p>₹300</h4>
+            <button onclick="addToCart('Health Tatva', 300, 'https://traya.health/cdn/shop/files/intro_8817b297-07c7-4945-b3b6-9fc06781baeb.webp?v=1736228872&width=823')" style="background-color: greenyellow; color: black;">Add to cart</button>
+            <a href=""> <h3>view product</h3></a>
+        </div>
+
+        <!-- 9 -->
+        <div class="product-card">
+            <img src="https://traya.health/cdn/shop/files/intro_decorated_31be7ea9-9120-4554-8c95-e926717f12b8.webp?v=1728626199" alt="" height="300px" width="300px">
+            <h3>Traya Nasal Drops medicated with ayurvedic herbs</h3>
+            <p>Ayurvedic nasal drops for nourishing hair follicles and reducing sleep-related hair loss nasal passage is gateway to head.</p>
+            <h4><p class="price">₹150</p></h4>
+            <button onclick="addToCart('Ayurvedic Nasal Drops', 150, 'https://traya.health/cdn/shop/files/intro_decorated_31be7ea9-9120-4554-8c95-e926717f12b8.webp?v=1728626199')" style="background-color: greenyellow; color: black;">Add to cart</button>
+            <a href=""> <h3>view product</h3></a>
+            
+        </div>
+        </div>
+        </div>
+        </div>
+        <button class="arrow right" onclick="scrollRight()">&#10095;</button>
+        </div>
+        <center> </div>
+        <button class="see-all-btn" style="background-color: black; border-radius: 15px;"><h2>SEE ALL PRODUCTS</h2></button>
+    </div> </center>
+</section>
+         <script>
+  function scrollLeft() {
+    document.getElementById("carousel").scrollBy({
+      left: -320,
+      behavior: "smooth"
+    });
+  }
+
+  function scrollRight() {
+    document.getElementById("carousel").scrollBy({
+      left: 320,
+      behavior: "smooth"
+    });
+  }
+</script>
+
+    </body>
+    </html> 
+  <script>
+    function addToCart(name, price, image) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push({ name, price, image });
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert(`${name} added to cart!`);
+    }
+  </script>
+   
+
+<script>
+  function addToCart(name, price, image) {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const product = {
+      name: name,
+      price: price,
+      image: image
+    };
+
+    cart.push(product);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(name + " added to cart!");
+  }
+</script>
+
+  <div id="gemini-icon" onclick="openChat()">
+    <img  src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/gemini-color.png" />
+  </div>
+
+  <div class="chatbox hidden" id="chatbox">
+    <div class="chat-header">
+      <span><h2>Traya AI Assistant🤖</h2></span>
+      <button onclick="closeChat()">✖</button>
+    </div>
+    <div id="chat-log" class="chat-log">
+      <div class="bot-msg">Hello! I'm Traya's AI assistant. Ask me anything about hair health, treatments, or our products!</div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="user-input" placeholder="Ask about hair health..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+
+
+
+</body>
+</html> 
+
+
